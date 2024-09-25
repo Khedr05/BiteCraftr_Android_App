@@ -4,25 +4,25 @@
     xmlns:tool="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/homePage"
         android:enabled="true"
         android:icon="@drawable/house_icon"
         android:title="Home" />
 
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/searchPage"
         android:enabled="true"
         android:icon="@drawable/search_icon"
         android:title="Search" />
 
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/favPage"
         android:enabled="true"
         android:icon="@drawable/favorite_icon"
         android:title="Favorites" />
 
     <item
-        android:id="@+id/page_4"
+        android:id="@+id/schedulePage"
         android:enabled="true"
         android:icon="@drawable/schedule_icon"
         android:title="Schedule" />

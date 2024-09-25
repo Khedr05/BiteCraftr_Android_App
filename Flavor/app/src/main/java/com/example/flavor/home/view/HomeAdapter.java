@@ -63,12 +63,18 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull HomeAdapter.ViewHolder holder, int position) {
-        Glide.with(context).load(values.get(position).getMealThumbnail())
+        Glide.with(context).load(values.get(position).getStrMealThumb())
                 .apply(new RequestOptions().override(200,200)
                         .placeholder(R.drawable.ic_launcher_background)
                         .error(R.drawable.ic_launcher_foreground))
                 .into(holder.img);
-        holder.txtView.setText(values.get(position).getMealName());
+        holder.txtView.setText(values.get(position).getStrMeal());
+        holder.img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 
