@@ -46,4 +46,9 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("androidx.room:room-runtime:2.6.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
+    implementation ("com.airbnb.android:lottie:6.1.0")
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.22")
+    implementation ("com.google.firebase:firebase-firestore:25.1.0")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.8.1")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.8.1")
 }
