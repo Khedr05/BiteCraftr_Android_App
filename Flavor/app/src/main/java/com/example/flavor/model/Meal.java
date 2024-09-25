@@ -3,6 +3,7 @@ package com.example.flavor.model;
 import com.google.gson.annotations.SerializedName;
 
 public class Meal {
+
     @SerializedName("idMeal")
     private String mealId;
 
@@ -107,29 +108,6 @@ public class Meal {
     public Meal(String mealId) {
         this.mealId = mealId;
     }
-
-   /* public List<Ingredient> getIngredients() {
-        List<Ingredient> ingredients = new ArrayList<>();
-        Field[] fields = this.getClass().getDeclaredFields();
-
-        for (Field field : fields) {
-            if (field.getName().startsWith("ingredient")) {
-                try {
-                    field.setAccessible(true);
-                    String value = (String) field.get(this);
-                    if (value != null && !value.isEmpty()) {
-                        ingredients.add(new Ingredient(value));
-                    }
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        return ingredients;
-    }*/
-
-
 
 
     // Getters
