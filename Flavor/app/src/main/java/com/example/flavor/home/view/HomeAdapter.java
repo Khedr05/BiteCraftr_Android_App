@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.flavor.R;
+import com.example.flavor.MealDetailsFragment;
 import com.example.flavor.model.Meal;
 
 import java.util.List;
@@ -72,7 +73,11 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MealDetailsFragment allMealDetailsFragment = MealDetailsFragment.getCurrentMeal(values.get(position));
 
+                ((HomeActivity) context).getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container,allMealDetailsFragment)
+                        .addToBackStack(null).commit();
             }
         });
 
