@@ -29,6 +29,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -52,4 +55,5 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment-ktx:2.8.1")
     implementation ("androidx.navigation:navigation-ui-ktx:2.8.1")
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation ("com.tbuonomo:dotsindicator:5.0")
 }

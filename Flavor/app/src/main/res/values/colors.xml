@@ -9,4 +9,8 @@
     <color name="button_color">#87CEEB</color>
     <color name="highlight_color">#FFA07A</color>
     <color name="label_background_color">#F0F0F0</color>
+    <color name="brown">#864912</color>
+    <color name="lightGrey">#efefef</color>
+    <color name="grey">#919191</color>
+    <color name="darkGrey">#707070</color>
 </resources>

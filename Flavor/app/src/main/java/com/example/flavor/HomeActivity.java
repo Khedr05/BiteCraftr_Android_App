@@ -1,21 +1,22 @@
 package com.example.flavor;
 
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.flavor.favMeals.view.FavMealsFragment;
 import com.example.flavor.home.view.homeFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 
 public class HomeActivity extends AppCompatActivity {
 
-
+    private LinearLayout exploreNav;
+    private LinearLayout searchNav;
+    private LinearLayout favNav;
+    private LinearLayout scheduleNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,39 +24,50 @@ public class HomeActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-        BottomNavigationView btnNavView = findViewById(R.id.bottom_navigation);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new homeFragment()).commit();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new homeFragment())
+                    .commit();
         }
-        btnNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        exploreNav = findViewById(R.id.linear_explore);
+        searchNav = findViewById(R.id.linear_search);
+        favNav = findViewById(R.id.linear_fav);
+        scheduleNav = findViewById(R.id.linear_schedule);
+
+        exploreNav.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment currentFragment = null;
-                int itemId = item.getItemId();
-                if (itemId==R.id.homePage)
-                {
-                    currentFragment=new homeFragment();
-                }
-                else if (itemId==R.id.searchPage){
-                    currentFragment=new searchFragment();
-                }
-                else if (itemId==R.id.favPage){
-                    currentFragment=new FavMealsFragment();
-                }
-                else if (itemId==R.id.schedulePage){
-                    currentFragment=new scheduleFragment();
-                }
-
-                if (currentFragment != null) {
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.fragment_container, currentFragment)
-                            .addToBackStack(null)
-                            .commit();
-
-                }
-                return true;
+            public void onClick(View v) {
+                switchFragment(new homeFragment());
             }
         });
 
+        searchNav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchFragment(new searchFragment());
+            }
+        });
+
+        favNav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchFragment(new FavMealsFragment());
+            }
+        });
+
+        scheduleNav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchFragment(new scheduleFragment());
+            }
+        });
+    }
+
+    private void switchFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .addToBackStack(null)
+                .commit();
     }
 }

@@ -6,10 +6,12 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.example.flavor.R;
 import com.example.flavor.db.MealsLocalDataSourceImpl;
@@ -28,10 +30,14 @@ import java.util.List;
 public class homeFragment extends Fragment implements HomeActivityInterface, OnClickAddToFavListener {
 
     public static final String TAG = "HomeActivity";
-    private RecyclerView recyclerView;
     private RecyclerView categoryRecyclerView;
-    private HomeAdapter homeAdapter;
+    private HomePagerAdapter homePagerAdapter;
     private CategoriesAdapter categoriesAdapter;
+
+    private ViewPager2 viewPager;
+    private ProgressBar progressBarRandom;
+    private ProgressBar progressBarCategory;
+    private ProgressBar progressBarMealByCategory;
 
     HomePresnter homePresenter;
     LinearLayoutManager linearLayout;
@@ -46,18 +52,14 @@ public class homeFragment extends Fragment implements HomeActivityInterface, OnC
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.dashboard_activty, container, false);
 
         initUI(view);
 
         homePresenter = new HomePresnterImpl(this, MealsRepositoryImpl.getInstance(MealsRemoteDataSourceImpl.getInstance() , MealsLocalDataSourceImpl.getInstance(getContext())));
 
-        recyclerView.setHasFixedSize(true);
-        linearLayout = new LinearLayoutManager(getActivity());
-        homeAdapter = new HomeAdapter(getActivity(),new ArrayList<>(),this);
-        linearLayout.setOrientation(RecyclerView.VERTICAL);
-        recyclerView.setLayoutManager(linearLayout);
-        recyclerView.setAdapter(homeAdapter);
+        homePagerAdapter = new HomePagerAdapter(getActivity(), new ArrayList<>());
+        viewPager.setAdapter(homePagerAdapter);
 
         categoryRecyclerView.setHasFixedSize(true);
         categoriesLinearLayout = new LinearLayoutManager(getActivity());
@@ -75,15 +77,19 @@ public class homeFragment extends Fragment implements HomeActivityInterface, OnC
 
     private void initUI(View v){
 
-        recyclerView = v.findViewById(R.id.recView);
-        categoryRecyclerView = v.findViewById(R.id.recView2);
+        viewPager = v.findViewById(R.id.viewPagerRandom);
+        categoryRecyclerView = v.findViewById(R.id.recViewCategories);
+        progressBarRandom = v.findViewById(R.id.progressBarRandom);
+        progressBarCategory = v.findViewById(R.id.progressBarCategories);
+        progressBarMealByCategory = v.findViewById(R.id.progressBarMealCategory);
     }
 
 
     @Override
     public void showData(List<Meal> meals) {
-        homeAdapter.setList(meals);
-        homeAdapter.notifyDataSetChanged();
+        homePagerAdapter.setList(meals);
+        homePagerAdapter.notifyDataSetChanged();
+        progressBarRandom.setVisibility(View.GONE);
     }
 
     @Override
@@ -98,6 +104,7 @@ public class homeFragment extends Fragment implements HomeActivityInterface, OnC
     public void showCategories(List<Category> categories) {
         categoriesAdapter.setList(categories);
         categoriesAdapter.notifyDataSetChanged();
+        progressBarCategory.setVisibility(View.GONE);
     }
 
     @Override

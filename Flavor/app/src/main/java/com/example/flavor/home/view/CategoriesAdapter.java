@@ -131,8 +131,8 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
         public ViewHolder(View v) {
             super(v);
             layout = v;
-            img = v.findViewById(R.id.img);
-            txtView = v.findViewById(R.id.textView);
+            img = v.findViewById(R.id.catImage);
+            txtView = v.findViewById(R.id.catTitle);
             constraintLayout = v.findViewById(R.id.main);
         }
     }
@@ -141,7 +141,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup recyclerView, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(recyclerView.getContext());
-        View v = inflater.inflate(R.layout.test2, recyclerView, false);
+        View v = inflater.inflate(R.layout.view_holder_category, recyclerView, false);
         ViewHolder vh = new ViewHolder(v);
         Log.i(TAG, "===== onCreateViewHolder =====");
         return vh;
