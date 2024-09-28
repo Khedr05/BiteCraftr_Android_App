@@ -1,4 +1,4 @@
-package com.example.flavor;
+package com.example.flavor.home.view;
 
 import android.os.Bundle;
 
@@ -11,12 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.flavor.R;
+import com.example.flavor.db.MealsLocalDataSourceImpl;
 import com.example.flavor.home.presnter.HomePresnter;
 import com.example.flavor.home.presnter.HomePresnterImpl;
-import com.example.flavor.home.view.CategoriesAdapter;
-import com.example.flavor.home.view.CategoriesInterface;
-import com.example.flavor.home.view.HomeActivityInterface;
-import com.example.flavor.home.view.HomeAdapter;
+import com.example.flavor.mealsDetails.view.OnClickAddToFavListener;
 import com.example.flavor.model.Category;
 import com.example.flavor.model.Meal;
 import com.example.flavor.model.MealsRepositoryImpl;
@@ -26,13 +25,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class homeFragment extends Fragment implements HomeActivityInterface, CategoriesInterface {
+public class homeFragment extends Fragment implements HomeActivityInterface, OnClickAddToFavListener {
 
     public static final String TAG = "HomeActivity";
     private RecyclerView recyclerView;
+    private RecyclerView categoryRecyclerView;
     private HomeAdapter homeAdapter;
     private CategoriesAdapter categoriesAdapter;
-    private RecyclerView categoryRecyclerView;
 
     HomePresnter homePresenter;
     LinearLayoutManager linearLayout;
@@ -51,25 +50,25 @@ public class homeFragment extends Fragment implements HomeActivityInterface, Cat
 
         initUI(view);
 
+        homePresenter = new HomePresnterImpl(this, MealsRepositoryImpl.getInstance(MealsRemoteDataSourceImpl.getInstance() , MealsLocalDataSourceImpl.getInstance(getContext())));
+
         recyclerView.setHasFixedSize(true);
         linearLayout = new LinearLayoutManager(getActivity());
-        homeAdapter = new HomeAdapter(getActivity(),new ArrayList<>());
-        //homePresenter = new HomePresnterImpl((HomeActivityInterface) this, (MealsRepository) MealsRepositoryImpl.getInstance(MealsRemoteDataSourceImpl.getInstance()), (CategoriesInterface) this);
+        homeAdapter = new HomeAdapter(getActivity(),new ArrayList<>(),this);
         linearLayout.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(linearLayout);
         recyclerView.setAdapter(homeAdapter);
 
-        /*categoryRecyclerView.setHasFixedSize(true);
+        categoryRecyclerView.setHasFixedSize(true);
         categoriesLinearLayout = new LinearLayoutManager(getActivity());
         categoriesAdapter = new CategoriesAdapter(getActivity(),new ArrayList<>());
         categoriesLinearLayout.setOrientation(RecyclerView.HORIZONTAL);
         categoryRecyclerView.setLayoutManager(categoriesLinearLayout);
-        categoryRecyclerView.setAdapter(categoriesAdapter);*/
+        categoryRecyclerView.setAdapter(categoriesAdapter);
 
 
-        homePresenter = new HomePresnterImpl(this, MealsRepositoryImpl.getInstance(MealsRemoteDataSourceImpl.getInstance()),this);
         homePresenter.getRandomMeal();
-        //homePresenter.getCategories();
+        homePresenter.getCategories();
 
         return view;
     }
@@ -77,6 +76,7 @@ public class homeFragment extends Fragment implements HomeActivityInterface, Cat
     private void initUI(View v){
 
         recyclerView = v.findViewById(R.id.recView);
+        categoryRecyclerView = v.findViewById(R.id.recView2);
     }
 
 

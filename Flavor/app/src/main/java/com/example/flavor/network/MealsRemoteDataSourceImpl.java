@@ -60,7 +60,7 @@ public class MealsRemoteDataSourceImpl implements MealsRemoteDataSource{
             @Override
             public void onResponse(@NonNull Call<AllResponse<Category>> call, @NonNull retrofit2.Response<AllResponse<Category>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    networkCallback.onSuccessResult(response.body().meals);
+                    networkCallback.onSuccessResult(response.body().categories);
                 } else {
                     networkCallback.onFailureResult("Failed to fetch category");
                 }

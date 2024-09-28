@@ -1,4 +1,5 @@
-package com.example.flavor;
+package com.example.flavor.mealsDetails.view;
+
 
 import android.annotation.SuppressLint;
 import android.net.Uri;
@@ -12,11 +13,19 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.flavor.R;
+import com.example.flavor.db.MealsLocalDataSourceImpl;
 import com.example.flavor.model.Meal;
+import com.example.flavor.model.MealsRepository;
+import com.example.flavor.model.MealsRepositoryImpl;
+import com.example.flavor.network.MealsRemoteDataSourceImpl;
 
 public class MealDetailsFragment extends Fragment {
 
@@ -29,12 +38,16 @@ public class MealDetailsFragment extends Fragment {
     private TextView mealTitle;
     private TextView mealDesc;
     private WebView mealVideo;
+    private Button addBtn;
+
+    private MealsRepositoryImpl _repo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             meal = (Meal) getArguments().getSerializable(MEAL_KEY);
+            _repo = MealsRepositoryImpl.getInstance(MealsRemoteDataSourceImpl.getInstance(), MealsLocalDataSourceImpl.getInstance(getContext()));
         }
     }
 
@@ -46,6 +59,7 @@ public class MealDetailsFragment extends Fragment {
         mealTitle = view.findViewById(R.id.mealTitle);
         mealDesc = view.findViewById(R.id.mealDesc);
         mealVideo = view.findViewById(R.id.mealVideo);
+        addBtn = view.findViewById(R.id.addToFavouriteButton);
 
         setupWebView();
         loadImage();
@@ -82,6 +96,13 @@ public class MealDetailsFragment extends Fragment {
     private void setMealDetails() {
         mealTitle.setText(meal.getStrMeal());
         mealDesc.setText(meal.getStrInstructions());
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(),"add to fav btn",Toast.LENGTH_SHORT).show();
+                addToFavMeals(meal);
+                }
+            });
     }
 
     public static MealDetailsFragment getCurrentMeal(Meal meal) {
@@ -102,5 +123,9 @@ public class MealDetailsFragment extends Fragment {
             videoId = uri.getLastPathSegment();
         }
         return videoId != null ? videoId : "";
+    }
+
+    public void addToFavMeals(Meal meal) {
+        _repo.insertMeal(meal);
     }
 }

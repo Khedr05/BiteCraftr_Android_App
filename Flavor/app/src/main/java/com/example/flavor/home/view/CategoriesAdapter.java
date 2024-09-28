@@ -141,7 +141,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup recyclerView, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(recyclerView.getContext());
-        View v = inflater.inflate(R.layout.test, recyclerView, false);
+        View v = inflater.inflate(R.layout.test2, recyclerView, false);
         ViewHolder vh = new ViewHolder(v);
         Log.i(TAG, "===== onCreateViewHolder =====");
         return vh;

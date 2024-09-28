@@ -1,4 +1,4 @@
-package com.example.flavor.home.view;
+package com.example.flavor;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,11 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.flavor.R;
-import com.example.flavor.favFragment;
-import com.example.flavor.homeFragment;
-import com.example.flavor.scheduleFragment;
-import com.example.flavor.searchFragment;
+import com.example.flavor.favMeals.view.FavMealsFragment;
+import com.example.flavor.home.view.homeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -43,14 +40,18 @@ public class HomeActivity extends AppCompatActivity {
                     currentFragment=new searchFragment();
                 }
                 else if (itemId==R.id.favPage){
-                    currentFragment=new favFragment();
+                    currentFragment=new FavMealsFragment();
                 }
                 else if (itemId==R.id.schedulePage){
                     currentFragment=new scheduleFragment();
                 }
 
                 if (currentFragment != null) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, currentFragment).commit();
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragment_container, currentFragment)
+                            .addToBackStack(null)
+                            .commit();
+
                 }
                 return true;
             }

@@ -1,6 +1,5 @@
 package com.example.flavor.home.presnter;
 
-import com.example.flavor.home.view.CategoriesInterface;
 import com.example.flavor.home.view.HomeActivityInterface;
 import com.example.flavor.model.Category;
 import com.example.flavor.model.MealsRepository;
@@ -11,13 +10,12 @@ import java.util.List;
 
 public class HomePresnterImpl implements HomePresnter{
 
-    private HomeActivityInterface _Randomview;
+    private HomeActivityInterface _view;
     private MealsRepository _repo;
-    private CategoriesInterface _categoryView;
 
-    public HomePresnterImpl(HomeActivityInterface Randomview , MealsRepository repo ,CategoriesInterface categoryView){
-        this._Randomview = Randomview;
-        this._categoryView = categoryView;
+
+    public HomePresnterImpl(HomeActivityInterface Randomview , MealsRepository repo){
+        this._view = Randomview;
         this._repo = repo;
     }
 
@@ -32,16 +30,17 @@ public class HomePresnterImpl implements HomePresnter{
         _repo.getCategories(new CategoryMealCallback());
     }
 
+
     // Inner class for handling random meal callback
     private class RandomMealCallback implements NetworkCallback<Meal> {
         @Override
         public void onSuccessResult(List<Meal> pojo) {
-            _Randomview.showData(pojo);
+            _view.showData(pojo);
         }
 
         @Override
         public void onFailureResult(String errorMsg) {
-            _Randomview.showErrMsg(errorMsg);
+            _view.showErrMsg(errorMsg);
         }
     }
 
@@ -49,12 +48,12 @@ public class HomePresnterImpl implements HomePresnter{
     private class CategoryMealCallback implements NetworkCallback<Category> {
         @Override
         public void onSuccessResult(List<Category> pojo) {
-            _categoryView.showCategories(pojo);
+            _view.showCategories(pojo);
         }
 
         @Override
         public void onFailureResult(String errorMsg) {
-            _categoryView.showCategoriesError(errorMsg);
+            _view.showCategoriesError(errorMsg);
         }
     }
 }

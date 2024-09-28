@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,8 +16,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.flavor.HomeActivity;
 import com.example.flavor.R;
-import com.example.flavor.MealDetailsFragment;
+import com.example.flavor.mealsDetails.view.MealDetailsFragment;
+import com.example.flavor.mealsDetails.view.OnClickAddToFavListener;
 import com.example.flavor.model.Meal;
 
 import java.util.List;
@@ -26,10 +29,12 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     private static final String TAG = "RecyclerView";
     private final Context context;
     private List<Meal> values;
+    private OnClickAddToFavListener listener;
 
-    public HomeAdapter(Context context, List<Meal> values) {
+    public HomeAdapter(Context context, List<Meal> values , OnClickAddToFavListener listener) {
         this.context = context;
         this.values = values;
+        this.listener = listener;
     }
 
     public void setList(List<Meal> meals){
@@ -40,6 +45,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
         private ImageView img;
         private TextView txtView;
+        private Button addBtn;
         public ConstraintLayout constraintLayout;
         public View layout;
 
@@ -48,6 +54,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
             layout = v;
             img = v.findViewById(R.id.img);
             txtView = v.findViewById(R.id.textView);
+            //addBtn = v.findViewById(R.id.addToFavouriteButton);
             constraintLayout = v.findViewById(R.id.main);
         }
     }
@@ -70,6 +77,14 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                         .error(R.drawable.ic_launcher_foreground))
                 .into(holder.img);
         holder.txtView.setText(values.get(position).getStrMeal());
+
+//        holder.addBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                    listener.onFavAddMealClick(values.get(position));
+//                }
+//            });
+
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

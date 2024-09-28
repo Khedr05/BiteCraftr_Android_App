@@ -1,12 +1,20 @@
 package com.example.flavor.model;
 
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity(tableName = "meal_table")
 public class Meal implements Serializable {
+
+    @PrimaryKey
+    @NonNull
     public String idMeal;
     public String strMeal;
-    public Object strDrinkAlternate;
+    public String strDrinkAlternate;
     public String strCategory;
     public String strArea;
     public String strInstructions;
@@ -28,11 +36,11 @@ public class Meal implements Serializable {
     public String strIngredient13;
     public String strIngredient14;
     public String strIngredient15;
-    public Object strIngredient16;
-    public Object strIngredient17;
-    public Object strIngredient18;
-    public Object strIngredient19;
-    public Object strIngredient20;
+    public String strIngredient16;
+    public String strIngredient17;
+    public String strIngredient18;
+    public String strIngredient19;
+    public String strIngredient20;
     public String strMeasure1;
     public String strMeasure2;
     public String strMeasure3;
@@ -48,17 +56,17 @@ public class Meal implements Serializable {
     public String strMeasure13;
     public String strMeasure14;
     public String strMeasure15;
-    public Object strMeasure16;
-    public Object strMeasure17;
-    public Object strMeasure18;
-    public Object strMeasure19;
-    public Object strMeasure20;
-    public Object strSource;
-    public Object strImageSource;
-    public Object strCreativeCommonsConfirmed;
-    public Object dateModified;
+    public String strMeasure16;
+    public String strMeasure17;
+    public String strMeasure18;
+    public String strMeasure19;
+    public String strMeasure20;
+    public String strSource;
+    public String strImageSource;
+    public String strCreativeCommonsConfirmed;
+    public String dateModified;
 
-    public Meal(String idMeal, String strMeal, Object strDrinkAlternate, String strCategory, String strArea, String strInstructions, String strMealThumb, String strTags, String strYoutube, String strIngredient1, String strIngredient2, String strIngredient3, String strIngredient4, String strIngredient5, String strIngredient6, String strIngredient7, String strIngredient8, String strIngredient9, String strIngredient10, String strIngredient11, String strIngredient12, String strIngredient13, String strIngredient14, String strIngredient15, Object strIngredient16, Object strIngredient17, Object strIngredient18, Object strIngredient19, Object strIngredient20, String strMeasure1, String strMeasure2, String strMeasure3, String strMeasure4, String strMeasure5, String strMeasure6, String strMeasure7, String strMeasure8, String strMeasure9, String strMeasure10, String strMeasure11, String strMeasure12, String strMeasure13, String strMeasure14, String strMeasure15, Object strMeasure16, Object strMeasure17, Object strMeasure18, Object strMeasure19, Object strMeasure20, Object strSource, Object strImageSource, Object strCreativeCommonsConfirmed, Object dateModified) {
+    public Meal(String idMeal, String strMeal, String strDrinkAlternate, String strCategory, String strArea, String strInstructions, String strMealThumb, String strTags, String strYoutube, String strIngredient1, String strIngredient2, String strIngredient3, String strIngredient4, String strIngredient5, String strIngredient6, String strIngredient7, String strIngredient8, String strIngredient9, String strIngredient10, String strIngredient11, String strIngredient12, String strIngredient13, String strIngredient14, String strIngredient15, String strIngredient16, String strIngredient17, String strIngredient18, String strIngredient19, String strIngredient20, String strMeasure1, String strMeasure2, String strMeasure3, String strMeasure4, String strMeasure5, String strMeasure6, String strMeasure7, String strMeasure8, String strMeasure9, String strMeasure10, String strMeasure11, String strMeasure12, String strMeasure13, String strMeasure14, String strMeasure15, String strMeasure16, String strMeasure17, String strMeasure18, String strMeasure19, String strMeasure20, String strSource, String strImageSource, String strCreativeCommonsConfirmed, String dateModified) {
         this.idMeal = idMeal;
         this.strMeal = strMeal;
         this.strDrinkAlternate = strDrinkAlternate;
@@ -114,6 +122,8 @@ public class Meal implements Serializable {
         this.dateModified = dateModified;
     }
 
+
+
     public String getIdMeal() {
         return idMeal;
     }
@@ -130,11 +140,11 @@ public class Meal implements Serializable {
         this.strMeal = strMeal;
     }
 
-    public Object getStrDrinkAlternate() {
+    public String getStrDrinkAlternate() {
         return strDrinkAlternate;
     }
 
-    public void setStrDrinkAlternate(Object strDrinkAlternate) {
+    public void setStrDrinkAlternate(String strDrinkAlternate) {
         this.strDrinkAlternate = strDrinkAlternate;
     }
 
@@ -306,43 +316,43 @@ public class Meal implements Serializable {
         this.strIngredient15 = strIngredient15;
     }
 
-    public Object getStrIngredient16() {
+    public String getStrIngredient16() {
         return strIngredient16;
     }
 
-    public void setStrIngredient16(Object strIngredient16) {
+    public void setStrIngredient16(String strIngredient16) {
         this.strIngredient16 = strIngredient16;
     }
 
-    public Object getStrIngredient17() {
+    public String getStrIngredient17() {
         return strIngredient17;
     }
 
-    public void setStrIngredient17(Object strIngredient17) {
+    public void setStrIngredient17(String strIngredient17) {
         this.strIngredient17 = strIngredient17;
     }
 
-    public Object getStrIngredient18() {
+    public String getStrIngredient18() {
         return strIngredient18;
     }
 
-    public void setStrIngredient18(Object strIngredient18) {
+    public void setStrIngredient18(String strIngredient18) {
         this.strIngredient18 = strIngredient18;
     }
 
-    public Object getStrIngredient19() {
+    public String getStrIngredient19() {
         return strIngredient19;
     }
 
-    public void setStrIngredient19(Object strIngredient19) {
+    public void setStrIngredient19(String strIngredient19) {
         this.strIngredient19 = strIngredient19;
     }
 
-    public Object getStrIngredient20() {
+    public String getStrIngredient20() {
         return strIngredient20;
     }
 
-    public void setStrIngredient20(Object strIngredient20) {
+    public void setStrIngredient20(String strIngredient20) {
         this.strIngredient20 = strIngredient20;
     }
 
@@ -466,78 +476,76 @@ public class Meal implements Serializable {
         this.strMeasure15 = strMeasure15;
     }
 
-    public Object getStrMeasure16() {
+    public String getStrMeasure16() {
         return strMeasure16;
     }
 
-    public void setStrMeasure16(Object strMeasure16) {
+    public void setStrMeasure16(String strMeasure16) {
         this.strMeasure16 = strMeasure16;
     }
 
-    public Object getStrMeasure17() {
+    public String getStrMeasure17() {
         return strMeasure17;
     }
 
-    public void setStrMeasure17(Object strMeasure17) {
+    public void setStrMeasure17(String strMeasure17) {
         this.strMeasure17 = strMeasure17;
     }
 
-    public Object getStrMeasure18() {
+    public String getStrMeasure18() {
         return strMeasure18;
     }
 
-    public void setStrMeasure18(Object strMeasure18) {
+    public void setStrMeasure18(String strMeasure18) {
         this.strMeasure18 = strMeasure18;
     }
 
-    public Object getStrMeasure19() {
+    public String getStrMeasure19() {
         return strMeasure19;
     }
 
-    public void setStrMeasure19(Object strMeasure19) {
+    public void setStrMeasure19(String strMeasure19) {
         this.strMeasure19 = strMeasure19;
     }
 
-    public Object getStrMeasure20() {
+    public String getStrMeasure20() {
         return strMeasure20;
     }
 
-    public void setStrMeasure20(Object strMeasure20) {
+    public void setStrMeasure20(String strMeasure20) {
         this.strMeasure20 = strMeasure20;
     }
 
-    public Object getStrSource() {
+    public String getStrSource() {
         return strSource;
     }
 
-    public void setStrSource(Object strSource) {
+    public void setStrSource(String strSource) {
         this.strSource = strSource;
     }
 
-    public Object getStrImageSource() {
+    public String getStrImageSource() {
         return strImageSource;
     }
 
-    public void setStrImageSource(Object strImageSource) {
+    public void setStrImageSource(String strImageSource) {
         this.strImageSource = strImageSource;
     }
 
-    public Object getStrCreativeCommonsConfirmed() {
+    public String getStrCreativeCommonsConfirmed() {
         return strCreativeCommonsConfirmed;
     }
 
-    public void setStrCreativeCommonsConfirmed(Object strCreativeCommonsConfirmed) {
+    public void setStrCreativeCommonsConfirmed(String strCreativeCommonsConfirmed) {
         this.strCreativeCommonsConfirmed = strCreativeCommonsConfirmed;
     }
 
-    public Object getDateModified() {
+    public String getDateModified() {
         return dateModified;
     }
 
-    public void setDateModified(Object dateModified) {
+    public void setDateModified(String dateModified) {
         this.dateModified = dateModified;
     }
 }
-
-
 
