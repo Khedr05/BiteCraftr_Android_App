@@ -83,7 +83,7 @@ public class FavMealsFragment extends Fragment implements FavMealsInterface,OnFa
     }
 
     @Override
-    public void onFavMealClick(Meal meal) {
+    public void onFavRemoveMealClick(Meal meal) {
         mealPresenter.removeMeal(meal);
         Toast.makeText(getContext(),"Meal Removed", Toast.LENGTH_SHORT).show();
     }

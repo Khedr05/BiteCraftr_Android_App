@@ -18,10 +18,10 @@ public interface MealsDAO {
 
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insertMeal(Meal product);
+    void insertMeal(Meal meal);
 
     @Delete
-    void deleteMeal(Meal product);
+    void deleteMeal(Meal meal);
 
 
 }

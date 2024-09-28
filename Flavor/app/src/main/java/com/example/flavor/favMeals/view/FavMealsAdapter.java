@@ -16,7 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.flavor.HomeActivity;
 import com.example.flavor.R;
+import com.example.flavor.mealsDetails.view.MealDetailsFragment;
 import com.example.flavor.model.Meal;
 
 import java.util.ArrayList;
@@ -73,14 +75,31 @@ public class FavMealsAdapter extends RecyclerView.Adapter<FavMealsAdapter.ViewHo
                         .placeholder(R.drawable.ic_launcher_background)
                         .error(R.drawable.ic_launcher_foreground))
                 .into(holder.img);
+        holder.img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MealDetailsFragment allMealDetailsFragment = MealDetailsFragment.getCurrentMeal(meal);
+
+                ((HomeActivity) context).getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container,allMealDetailsFragment)
+                        .addToBackStack(null).commit();
+            }
+        });
         holder.titleTxtView.setText(meal.getStrMeal());
 
-        holder.removeBtn.setOnClickListener(view -> listener.onFavMealClick(meal));
+        holder.removeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listener.onFavRemoveMealClick(meal);
+            }
+        });
 
-        holder.layout.setOnClickListener(view ->
-                Toast.makeText(context, meal.getStrMeal(), Toast.LENGTH_SHORT).show()
-        );
-
+        holder.layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, meal.getStrMeal(), Toast.LENGTH_SHORT).show();
+            }
+        });
         Log.i(TAG, "***** onBindViewHolder **************");
     }
 

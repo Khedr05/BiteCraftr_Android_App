@@ -7,7 +7,7 @@ import com.example.flavor.model.Meal;
 import java.util.List;
 
 public interface MealsLocalDataSource {
-    void insert(Meal product);
-    void delete(Meal product);
+    void insert(Meal meal);
+    void delete(Meal meal);
     LiveData<List<Meal>> getStoredData();
 }

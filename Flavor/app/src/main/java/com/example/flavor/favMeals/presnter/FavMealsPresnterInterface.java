@@ -7,6 +7,6 @@ import com.example.flavor.model.Meal;
 import java.util.List;
 
 public interface FavMealsPresnterInterface {
-    LiveData<List<Meal>> loadFavMeals();
-    void removeMeal(Meal meal);
+    public LiveData<List<Meal>> loadFavMeals();
+    public void removeMeal(Meal meal);
 }

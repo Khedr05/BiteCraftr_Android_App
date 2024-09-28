@@ -77,14 +77,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                         .error(R.drawable.ic_launcher_foreground))
                 .into(holder.img);
         holder.txtView.setText(values.get(position).getStrMeal());
-
-//        holder.addBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                    listener.onFavAddMealClick(values.get(position));
-//                }
-//            });
-
         holder.img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
