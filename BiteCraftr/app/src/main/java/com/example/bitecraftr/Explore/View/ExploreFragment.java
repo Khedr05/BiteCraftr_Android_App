@@ -74,7 +74,11 @@ public class ExploreFragment extends Fragment implements ExploreView, Categories
     private RecyclerView mealsByIngredientsRecyclerView;
     private MealsByIngredientsAdapter mealsByIngredientsAdapter;
 
-
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -192,10 +196,10 @@ public class ExploreFragment extends Fragment implements ExploreView, Categories
     @Override
     public void exploreShowErrorMsg(String error) {
         // Show an error dialog when an error occurs
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setMessage(error).setTitle("An Error Occurred");
-        AlertDialog dialog = builder.create();
-        dialog.show();
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainer, new NetworkFragment());
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
     @Override
@@ -278,14 +282,6 @@ public class ExploreFragment extends Fragment implements ExploreView, Categories
     public void onMealClick(String mealId) {
         // Transition to the MealDetailsFragment when a meal is clicked
         explorePresenter.exploreGetMealById(mealId);
-    }
-
-
-    ///////////////////////
-    private boolean isNetworkConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-        return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
     }
 
     @Override

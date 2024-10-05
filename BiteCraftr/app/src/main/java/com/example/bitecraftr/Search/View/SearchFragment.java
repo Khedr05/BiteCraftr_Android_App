@@ -1,18 +1,20 @@
 package com.example.bitecraftr.Search.View;
 
-import android.app.AlertDialog;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.bitecraftr.Database.LocalDataSourceImpl;
 import com.example.bitecraftr.MealDetails.View.MealDetailsFragment;
@@ -43,6 +45,11 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
     // RecyclerView for showing meals
     private RecyclerView recyclerView;
 
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
+    }
 
     // Variable to track which tab is selected (0: Meal, 1: Country, etc.)
     int tap = 0;
@@ -67,6 +74,15 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
         TabLayout tableLayout = view.findViewById(R.id.tabLayout);
         // SearchView for entering search queries
         SearchView searchView = view.findViewById(R.id.searchView);
+
+        if (!isNetworkConnected()) {
+            // Redirect to NoConnectionFragment
+            FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragmentContainer, new NetworkFragment());
+            transaction.addToBackStack(null);
+            transaction.commit();
+            return view;  // Return early to avoid fetching data
+        }
 
         // Initialize SearchPresenter to handle data fetching
         searchPresenter = new SearchPresenterImpl(this, AppRepositoryImpl.getInstance(
@@ -104,7 +120,9 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                // No action needed when the tab is unselected
+                // Clear the RecyclerView data when the user switches tabs
+                searchAdapter.setList(new ArrayList<Meal>());  // Set an empty list
+                searchAdapter.notifyDataSetChanged();  // Notify the adapter that the data has changed
             }
 
             @Override
@@ -142,15 +160,6 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
                     case 0:
                         searchPresenter.getMealByName(searchView.getQuery().toString());
                         break;
-                    case 1:
-                        searchPresenter.getMealsByCountry(searchView.getQuery().toString());
-                        break;
-                    case 2:
-                        searchPresenter.getMealsByCategory(searchView.getQuery().toString());
-                        break;
-                    case 3:
-                        searchPresenter.getMealsByIngredients(searchView.getQuery().toString());
-                        break;
                 }
                 return false;
             }
@@ -184,8 +193,12 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
      */
     @Override
     public void showData(List<Meal> meals) {
+
+        if(meals == null){
+            Toast.makeText(getContext(), "No Meals Found", Toast.LENGTH_SHORT).show();
+        }
         // Check if a specific meal was clicked (byId flag is true)
-        if (searchAdapter.getById()) {
+        else if (searchAdapter.getById()) {
             // Open the meal details fragment for the selected meal
             MealDetailsFragment mealFragment = MealDetailsFragment.getCurrentMeal(meals.get(0));
             FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -196,8 +209,8 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
             searchAdapter.setById(false);
         } else {
             // Update the searchAdapter with the fetched meals and notify the adapter to refresh the UI
-            searchAdapter.setList(meals);
-            searchAdapter.notifyDataSetChanged();
+                searchAdapter.setList(meals);
+                searchAdapter.notifyDataSetChanged();
         }
     }
 }
