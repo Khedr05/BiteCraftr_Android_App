@@ -58,6 +58,8 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
     private RecyclerView ingredientsRecyclerView; // RecyclerView for displaying ingredients
     private IngredientsAdapter ingredientsAdapter; // Adapter for ingredients RecyclerView
     private MealDetailsPresenter presenter; // Presenter for handling meal details logic
+    private TextView mealArea; // TextView for displaying the meal area
+    private ImageView mealAreaFlag; // ImageView for displaying the meal area flag
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,6 +89,8 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
         planBtn = view.findViewById(R.id.addToScheduleBtn);
         backBtn = view.findViewById(R.id.backBtn);
         ingredientsRecyclerView = view.findViewById(R.id.ingredientsRecView);
+        mealArea = view.findViewById(R.id.mealArea);
+        mealAreaFlag = view.findViewById(R.id.mealAreaFlag);
 
         setupWebView(); // Setup WebView for the meal video
 
@@ -160,6 +164,7 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
         // Display the meal details on the UI
         mealTitle.setText(meal.getStrMeal());
         mealDesc.setText(meal.getStrInstructions());
+        mealArea.setText(meal.getStrArea());
         loadImage(); // Load the meal image
     }
 
@@ -186,6 +191,10 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
                         .placeholder(R.drawable.ic_launcher_background) // Placeholder image
                         .error(R.drawable.ic_launcher_foreground)) // Error image
                 .into(mealImage); // Load the image into the ImageView
+
+        // Load the meal area flag image
+        Integer imageId = getContext().getResources().getIdentifier(meal.getStrArea().toLowerCase(), "drawable", getContext().getPackageName());
+        mealAreaFlag.setImageResource(imageId);
     }
 
     /**
