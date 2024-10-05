@@ -15,6 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -49,8 +52,9 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
     private TextView mealTitle; // TextView for displaying the meal title
     private TextView mealDesc; // TextView for displaying the meal description
     private WebView mealVideo; // WebView for displaying the meal video
-    private Button addBtn; // Button to add meal to favorites
-    private Button planBtn; // Button to plan the meal
+    private ImageView addBtn; // Button to add meal to favorites
+    private ImageView planBtn; // Button to plan the meal
+    private ImageView backBtn; // Button to go back
     private RecyclerView ingredientsRecyclerView; // RecyclerView for displaying ingredients
     private IngredientsAdapter ingredientsAdapter; // Adapter for ingredients RecyclerView
     private MealDetailsPresenter presenter; // Presenter for handling meal details logic
@@ -77,11 +81,12 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
         // Initialize views
         mealImage = view.findViewById(R.id.mealImage);
         mealTitle = view.findViewById(R.id.mealTitle);
-        mealDesc = view.findViewById(R.id.mealDesc);
+        mealDesc = view.findViewById(R.id.descriptionTxtView);
         mealVideo = view.findViewById(R.id.mealVideo);
-        addBtn = view.findViewById(R.id.addToFavouriteButton);
-        planBtn = view.findViewById(R.id.addToPlanButton);
-        ingredientsRecyclerView = view.findViewById(R.id.ingredientsRecyclerView);
+        addBtn = view.findViewById(R.id.addToFavBtn);
+        planBtn = view.findViewById(R.id.addToScheduleBtn);
+        backBtn = view.findViewById(R.id.backBtn);
+        ingredientsRecyclerView = view.findViewById(R.id.ingredientsRecView);
 
         setupWebView(); // Setup WebView for the meal video
 
@@ -103,7 +108,7 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
         planBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                CleanderFragment dialogFragment = new CleanderFragment();
+                CalendarFragment dialogFragment = new CalendarFragment();
                 dialogFragment.setOnDateSelectedListener(new OnDateSelectedListener() {
                     @Override
                     public void onDateSelected(String selectedDate) {
@@ -113,6 +118,15 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
                     }
                 });
                 dialogFragment.show(getParentFragmentManager(), "calendarDialog");
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Use FragmentManager to go back to the previous fragment
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.popBackStack(); // Pops the last fragment from the back stack
             }
         });
 
@@ -169,7 +183,6 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
         Glide.with(this)
                 .load(meal.getStrMealThumb())
                 .apply(new RequestOptions()
-                        .override(200, 200) // Set image size
                         .placeholder(R.drawable.ic_launcher_background) // Placeholder image
                         .error(R.drawable.ic_launcher_foreground)) // Error image
                 .into(mealImage); // Load the image into the ImageView

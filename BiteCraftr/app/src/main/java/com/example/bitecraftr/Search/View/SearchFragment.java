@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -41,8 +42,7 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
     private SearchPresenter searchPresenter;
     // RecyclerView for showing meals
     private RecyclerView recyclerView;
-    // Layout manager for the RecyclerView
-    LinearLayoutManager layoutManager;
+
 
     // Variable to track which tab is selected (0: Meal, 1: Country, etc.)
     int tap = 0;
@@ -75,9 +75,7 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
         // Initialize the searchAdapter with an empty list of meals
         searchAdapter = new SearchAdapter(getContext(), new ArrayList<Meal>(), this);
         // Configure the layout manager for the RecyclerView (vertical list)
-        layoutManager = new LinearLayoutManager(getContext());
-        layoutManager.setOrientation(RecyclerView.VERTICAL);
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext() , 2));
         recyclerView.setAdapter(searchAdapter);
 
         // Handle TabLayout interactions (to select which category the user is searching by)

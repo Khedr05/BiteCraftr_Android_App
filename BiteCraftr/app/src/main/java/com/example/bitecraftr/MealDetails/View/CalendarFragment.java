@@ -9,11 +9,14 @@ import androidx.fragment.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
+
 import com.example.bitecraftr.R;
 import java.util.Calendar;
 
-public class CleanderFragment extends DialogFragment {
+public class CalendarFragment extends DialogFragment {
     private OnDateSelectedListener listener;
 
     // This method allows the parent fragment to set the listener
@@ -25,11 +28,11 @@ public class CleanderFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         LayoutInflater inflater = requireActivity().getLayoutInflater();
-        View view = inflater.inflate(R.layout.fragment_cleander, null);
+        View view = inflater.inflate(R.layout.fragment_calendar, null);
 
         // Get references to the views
         DatePicker datePicker = view.findViewById(R.id.datePicker);
-        Button btnSelectDate = view.findViewById(R.id.btnSelectDate);
+        ImageButton btnSelectDate = view.findViewById(R.id.btnSelectDate);
 
         // Create dialog
         Dialog dialog = new Dialog(getActivity());
@@ -39,8 +42,8 @@ public class CleanderFragment extends DialogFragment {
         Calendar calendar = Calendar.getInstance();
         datePicker.init(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), null);
 
-        // Set maximum date to current date
-        datePicker.setMaxDate(System.currentTimeMillis());
+        // Set minimum date to current date
+        datePicker.setMinDate(System.currentTimeMillis());
 
         // Handle button click to select date
         btnSelectDate.setOnClickListener(new View.OnClickListener() {

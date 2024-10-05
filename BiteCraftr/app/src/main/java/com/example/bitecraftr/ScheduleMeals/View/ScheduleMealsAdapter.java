@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,7 +43,7 @@ public class ScheduleMealsAdapter extends RecyclerView.Adapter<ScheduleMealsAdap
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView scheduleMealImg; // Image view for displaying the meal image
         private TextView scheduleMealTitle; // Text view for displaying the meal title
-        private Button scheduleRemoveBtn; // Button for removing the scheduled meal
+        private ImageButton scheduleRemoveBtn; // Button for removing the scheduled meal
         private View layout; // The entire layout for the item
 
         public ViewHolder(@NonNull View v) {

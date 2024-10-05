@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -88,7 +89,7 @@ public class ScheduleFragment extends Fragment implements OnScheduleMealsAdapter
         scheduleMealsAdapter = new ScheduleMealsAdapter(getContext(), new ArrayList<>(), this);
         recyclerView.setAdapter(scheduleMealsAdapter);
         // Set the layout manager for the RecyclerView to arrange items vertically
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));  // 2 columns
     }
 
     // Method to load scheduled meals for the selected date

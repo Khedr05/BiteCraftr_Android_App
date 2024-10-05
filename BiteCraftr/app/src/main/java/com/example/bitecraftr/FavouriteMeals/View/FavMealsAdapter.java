@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,7 +44,7 @@ public class FavMealsAdapter extends RecyclerView.Adapter<FavMealsAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView img;  // ImageView to display the meal image
         private TextView titleTxtView;  // TextView to display the meal name
-        private Button removeBtn;  // Button to remove a meal from the favorites
+        private ImageButton removeBtn;  // Button to remove a meal from the favorites
         private ConstraintLayout constraintLayout;  // Layout for the item
         private View layout;  // The root view of the item
 
@@ -51,9 +52,9 @@ public class FavMealsAdapter extends RecyclerView.Adapter<FavMealsAdapter.ViewHo
         public ViewHolder(View v) {
             super(v);
             layout = v;
-            img = v.findViewById(R.id.searchedMealImg);
-            titleTxtView = v.findViewById(R.id.ingredientsTitle);
-            removeBtn = v.findViewById(R.id.rmBtn);
+            img = v.findViewById(R.id.favMealImg);
+            titleTxtView = v.findViewById(R.id.favMealTitle);
+            removeBtn = v.findViewById(R.id.removeBtn);
             constraintLayout = v.findViewById(R.id.main);
         }
     }

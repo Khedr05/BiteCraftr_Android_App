@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -34,7 +35,6 @@ public class FavoritesFragment extends Fragment implements FavMealsView, OnFavMe
     private RecyclerView recyclerView;
     private FavMealsAdapter mealAdapter;
     private FavMealsPresenter mealPresenter;
-    private LinearLayoutManager layoutManager;
 
     // Called when the fragment is first created
     @Override
@@ -53,9 +53,7 @@ public class FavoritesFragment extends Fragment implements FavMealsView, OnFavMe
         recyclerView.setHasFixedSize(true); // Improves performance if size of the RecyclerView doesn't change
 
         // Set up the layout manager for the RecyclerView
-        layoutManager = new LinearLayoutManager(getContext());
-        layoutManager.setOrientation(RecyclerView.VERTICAL);
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
         // Initialize the presenter with the view and repository (which has local and remote data sources)
         mealPresenter = new FavMealsPresnterImpl(this, AppRepositoryImpl.getInstance(RemoteDataSourceImpl.getInstance(),
