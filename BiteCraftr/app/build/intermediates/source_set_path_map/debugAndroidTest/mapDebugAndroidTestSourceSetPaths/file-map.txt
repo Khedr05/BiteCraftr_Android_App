@@ -1,0 +1,5 @@
+com.example.bitecraftr.test.app-core-1.6.1-0 C:\Users\Sherif\.gradle\caches\transforms-4\6830a08a238b54d0dac17148d16fdb04\transformed\core-1.6.1\res
+com.example.bitecraftr.test.app-androidTest-1 S:\androidStudioWorkspace\BiteCraftr\app\build\generated\res\resValues\androidTest\debug
+com.example.bitecraftr.test.app-mergeDebugAndroidTestResources-2 S:\androidStudioWorkspace\BiteCraftr\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.bitecraftr.test.app-mergeDebugAndroidTestResources-3 S:\androidStudioWorkspace\BiteCraftr\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.bitecraftr.test.app-debugAndroidTest-4 S:\androidStudioWorkspace\BiteCraftr\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

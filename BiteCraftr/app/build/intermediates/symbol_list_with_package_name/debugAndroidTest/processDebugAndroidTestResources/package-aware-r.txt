@@ -1,0 +1,3 @@
+com.example.bitecraftr.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
