@@ -1,4 +1,4 @@
-#Sun Oct 06 13:16:14 EEST 2024
+#Sun Oct 06 13:30:06 EEST 2024
 base.0=S\:\\androidStudioWorkspace\\BiteCraftr\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=S\:\\androidStudioWorkspace\\BiteCraftr\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=S\:\\androidStudioWorkspace\\BiteCraftr\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
