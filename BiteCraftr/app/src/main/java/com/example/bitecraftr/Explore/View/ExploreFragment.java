@@ -40,8 +40,8 @@ public class ExploreFragment extends Fragment implements ExploreView, Categories
     private ExplorePresenter explorePresenter;
 
     // ViewPager for displaying random meals
-    private ViewPager2 randomViewPager;
     private ProgressBar randomprogressBar;
+    private RecyclerView randomRecyclerView;
     private RandomMealPagerAdapter randomMealPagerAdapter;
 
     // UI elements for categories
@@ -99,9 +99,10 @@ public class ExploreFragment extends Fragment implements ExploreView, Categories
         // Initialize the presenter with data sources
         explorePresenter = new ExplorePresenterImpl(this, AppRepositoryImpl.getInstance(RemoteDataSourceImpl.getInstance(), LocalDataSourceImpl.getInstance(getContext())));
 
-        // Set up the ViewPager for random meals
+        // Set up the RecyclerView for random meals
         randomMealPagerAdapter = new RandomMealPagerAdapter(getActivity(), new ArrayList<>());
-        randomViewPager.setAdapter(randomMealPagerAdapter);
+        randomRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
+        randomRecyclerView.setAdapter(randomMealPagerAdapter);
         explorePresenter.exploreGetRandomMeal(); // Fetch random meals
 
         // Set up the RecyclerView for categories
@@ -138,7 +139,7 @@ public class ExploreFragment extends Fragment implements ExploreView, Categories
 
     // Initialize UI components
     private void initUi(View v) {
-        randomViewPager = v.findViewById(R.id.viewPagerRandom);
+        randomRecyclerView = v.findViewById(R.id.randomRecView);
         randomprogressBar = v.findViewById(R.id.progressBarRandom);
         categoryRecyclerView = v.findViewById(R.id.recViewCategories);
         progressBarCategory = v.findViewById(R.id.progressBarCategories);

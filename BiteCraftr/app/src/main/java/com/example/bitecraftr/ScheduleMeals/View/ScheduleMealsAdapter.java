@@ -1,5 +1,6 @@
 package com.example.bitecraftr.ScheduleMeals.View;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -97,7 +98,13 @@ public class ScheduleMealsAdapter extends RecyclerView.Adapter<ScheduleMealsAdap
         holder.scheduleRemoveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                scheduleMealsAdapterListener.onRemoveMealClick(scheduledMeal); // Notify the listener
+                new AlertDialog.Builder(context)
+                        .setMessage("Are you sure you want to remove this meal from schedule ?")
+                        .setPositiveButton(android.R.string.yes, (dialog, whichButton) -> {
+                            scheduleMealsAdapterListener.onRemoveMealClick(scheduledMeal);
+                        })// Notify the listener
+                        .setNegativeButton(android.R.string.no, null).show()
+                        .show();
             }
         });
     }

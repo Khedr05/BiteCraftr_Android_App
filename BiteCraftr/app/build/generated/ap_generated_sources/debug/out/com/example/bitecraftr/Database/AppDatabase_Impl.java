@@ -16,6 +16,7 @@ import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -34,8 +35,9 @@ public final class AppDatabase_Impl extends AppDatabase {
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `Meals` (`idMeal` TEXT NOT NULL, `strMeal` TEXT, `strDrinkAlternate` TEXT, `strCategory` TEXT, `strArea` TEXT, `strInstructions` TEXT, `strMealThumb` TEXT, `strTags` TEXT, `strYoutube` TEXT, `strIngredient1` TEXT, `strIngredient2` TEXT, `strIngredient3` TEXT, `strIngredient4` TEXT, `strIngredient5` TEXT, `strIngredient6` TEXT, `strIngredient7` TEXT, `strIngredient8` TEXT, `strIngredient9` TEXT, `strIngredient10` TEXT, `strIngredient11` TEXT, `strIngredient12` TEXT, `strIngredient13` TEXT, `strIngredient14` TEXT, `strIngredient15` TEXT, `strIngredient16` TEXT, `strIngredient17` TEXT, `strIngredient18` TEXT, `strIngredient19` TEXT, `strIngredient20` TEXT, `strMeasure1` TEXT, `strMeasure2` TEXT, `strMeasure3` TEXT, `strMeasure4` TEXT, `strMeasure5` TEXT, `strMeasure6` TEXT, `strMeasure7` TEXT, `strMeasure8` TEXT, `strMeasure9` TEXT, `strMeasure10` TEXT, `strMeasure11` TEXT, `strMeasure12` TEXT, `strMeasure13` TEXT, `strMeasure14` TEXT, `strMeasure15` TEXT, `strMeasure16` TEXT, `strMeasure17` TEXT, `strMeasure18` TEXT, `strMeasure19` TEXT, `strMeasure20` TEXT, `strSource` TEXT, `strImageSource` TEXT, `strCreativeCommonsConfirmed` TEXT, `dateModified` TEXT, PRIMARY KEY(`idMeal`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `Scheduled_Meals` (`ScheduledMealId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` TEXT, `idMeal` TEXT, `strMeal` TEXT, `strDrinkAlternate` TEXT, `strCategory` TEXT, `strArea` TEXT, `strInstructions` TEXT, `strMealThumb` TEXT, `strTags` TEXT, `strYoutube` TEXT, `strIngredient1` TEXT, `strIngredient2` TEXT, `strIngredient3` TEXT, `strIngredient4` TEXT, `strIngredient5` TEXT, `strIngredient6` TEXT, `strIngredient7` TEXT, `strIngredient8` TEXT, `strIngredient9` TEXT, `strIngredient10` TEXT, `strIngredient11` TEXT, `strIngredient12` TEXT, `strIngredient13` TEXT, `strIngredient14` TEXT, `strIngredient15` TEXT, `strIngredient16` TEXT, `strIngredient17` TEXT, `strIngredient18` TEXT, `strIngredient19` TEXT, `strIngredient20` TEXT, `strMeasure1` TEXT, `strMeasure2` TEXT, `strMeasure3` TEXT, `strMeasure4` TEXT, `strMeasure5` TEXT, `strMeasure6` TEXT, `strMeasure7` TEXT, `strMeasure8` TEXT, `strMeasure9` TEXT, `strMeasure10` TEXT, `strMeasure11` TEXT, `strMeasure12` TEXT, `strMeasure13` TEXT, `strMeasure14` TEXT, `strMeasure15` TEXT, `strMeasure16` TEXT, `strMeasure17` TEXT, `strMeasure18` TEXT, `strMeasure19` TEXT, `strMeasure20` TEXT, `strSource` TEXT, `strImageSource` TEXT, `strCreativeCommonsConfirmed` TEXT, `dateModified` TEXT)");
+        db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_Scheduled_Meals_idMeal_date` ON `Scheduled_Meals` (`idMeal`, `date`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bd65e147fff345c2753d00314a2a0f16')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a6fa03db046bedcfa847acf4ae1b822f')");
       }
 
       @Override
@@ -205,7 +207,8 @@ public final class AppDatabase_Impl extends AppDatabase {
         _columnsScheduledMeals.put("strCreativeCommonsConfirmed", new TableInfo.Column("strCreativeCommonsConfirmed", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsScheduledMeals.put("dateModified", new TableInfo.Column("dateModified", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysScheduledMeals = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesScheduledMeals = new HashSet<TableInfo.Index>(0);
+        final HashSet<TableInfo.Index> _indicesScheduledMeals = new HashSet<TableInfo.Index>(1);
+        _indicesScheduledMeals.add(new TableInfo.Index("index_Scheduled_Meals_idMeal_date", true, Arrays.asList("idMeal", "date"), Arrays.asList("ASC", "ASC")));
         final TableInfo _infoScheduledMeals = new TableInfo("Scheduled_Meals", _columnsScheduledMeals, _foreignKeysScheduledMeals, _indicesScheduledMeals);
         final TableInfo _existingScheduledMeals = TableInfo.read(db, "Scheduled_Meals");
         if (!_infoScheduledMeals.equals(_existingScheduledMeals)) {
@@ -215,7 +218,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "bd65e147fff345c2753d00314a2a0f16", "d21a285ebda09432c2500cc8eca05bc2");
+    }, "a6fa03db046bedcfa847acf4ae1b822f", "afba3b24a6fb465c2e799144b4a37f72");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;

@@ -63,21 +63,27 @@ public class ScheduleFragment extends Fragment implements OnScheduleMealsAdapter
 
         // Get the current date
         Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
 
         // Initialize the DatePicker with the current date and set a listener for date changes
-        datePicker.init(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH),
-                (view1, year, monthOfYear, dayOfMonth) -> {
-                    // Format the selected date as a string
-                    String selectedDate = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+        datePicker.init(year, month, day, (view1, year1, monthOfYear, dayOfMonth) -> {
+            // Format the selected date as a string
+            String selectedDate = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year1;
 
-                    // Load the scheduled meals for the selected date
-                    loadScheduledMeals(selectedDate);
+            // Load the scheduled meals for the selected date
+            loadScheduledMeals(selectedDate);
 
-                    // Notify other fragments about the date change if needed
-                    Bundle result = new Bundle();
-                    result.putString("selectedDate", selectedDate);
-                    getParentFragmentManager().setFragmentResult("requestKey", result);
-                });
+            // Notify other fragments about the date change if needed
+            Bundle result = new Bundle();
+            result.putString("selectedDate", selectedDate);
+            getParentFragmentManager().setFragmentResult("requestKey", result);
+        });
+
+        // Automatically load meals for the current date when the fragment starts
+        String currentDate = day + "/" + (month + 1) + "/" + year;
+        loadScheduledMeals(currentDate);
 
         // Return the view for the fragment
         return view;

@@ -1,6 +1,7 @@
 package com.example.bitecraftr.FavouriteMeals.View;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -100,7 +101,14 @@ public class FavMealsAdapter extends RecyclerView.Adapter<FavMealsAdapter.ViewHo
         holder.removeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.onFavRemoveMealClick(meal);  // Notify the listener when the remove button is clicked
+
+                new AlertDialog.Builder(context)
+                        .setMessage("Are you sure you want to remove this meal from favorites ?")
+                        .setPositiveButton(android.R.string.yes, (dialog, whichButton) -> {
+                                    listener.onFavRemoveMealClick(meal);  // Notify the listener when the remove button is clicked
+                                })
+                        .setNegativeButton(android.R.string.no, null).show()
+                        .show();
             }
         });
 

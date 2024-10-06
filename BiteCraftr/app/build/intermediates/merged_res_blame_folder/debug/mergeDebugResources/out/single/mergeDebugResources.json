@@ -132,10 +132,6 @@
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\moroccan.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_meal_details.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_meal_details.xml"
-    },
-    {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_explore_country_flags_row.xml.flat",
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_country_flags_row.xml"
     },
@@ -376,6 +372,10 @@
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.example.bitecraftr.app-debug-78:/layout_random_meal_container.xml.flat",
+        "source": "com.example.bitecraftr.app-main-80:/layout/random_meal_container.xml"
+    },
+    {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_indian.png.flat",
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\indian.png"
     },
@@ -432,12 +432,12 @@
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\mexican.png"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_remove.png.flat",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\remove.png"
-    },
-    {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_random_meal_container.xml.flat",
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\random_meal_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_remove.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\remove.png"
     },
     {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_explore_icon.png.flat",

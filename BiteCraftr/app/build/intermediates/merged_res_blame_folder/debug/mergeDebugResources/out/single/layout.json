@@ -20,16 +20,20 @@
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_categories_row.xml"
     },
     {
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/random_meal_container.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/random_meal_container.xml"
+    },
+    {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_search.xml",
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\ingredients_details_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\ingredients_details_row.xml"
-    },
-    {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\dashboard_activty.xml",
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\dashboard_activty.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\ingredients_details_row.xml",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\ingredients_details_row.xml"
     },
     {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fav_meals_row.xml",
@@ -82,9 +86,5 @@
     {
         "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_schedule.xml",
         "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_schedule.xml"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_meal_details.xml",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_meal_details.xml"
     }
 ]

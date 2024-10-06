@@ -3562,7 +3562,6 @@ id disableScroll
 id disabled
 id disjoint
 id dot
-id dotIndicator
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3812,6 +3811,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id randomMealImg
+id randomMealName
+id randomRecView
 id ratio
 id recPlaned
 id recView
@@ -3971,7 +3972,6 @@ id up
 id useLogo
 id vertical_only
 id videoLabel
-id viewPagerRandom
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner

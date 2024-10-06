@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,11 +34,12 @@ public class RandomMealPagerAdapter extends RecyclerView.Adapter<RandomMealPager
     // ViewHolder class to hold the view for each meal item
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView randomMealImg; // ImageView to display the meal thumbnail
-
+        TextView randomMealName; // TextView to display the meal name
         // Constructor to initialize the ImageView
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             randomMealImg = itemView.findViewById(R.id.randomMealImg); // Find ImageView by ID
+            randomMealName = itemView.findViewById(R.id.randomMealName); // Find TextView by ID
         }
     }
 
@@ -75,6 +77,8 @@ public class RandomMealPagerAdapter extends RecyclerView.Adapter<RandomMealPager
                         .commit(); // Commit the transaction
             }
         });
+
+        holder.randomMealName.setText(meals.get(position).getStrMeal()); // Set meal name
     }
 
     // Returns the total number of items in the list

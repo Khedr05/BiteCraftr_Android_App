@@ -98,6 +98,12 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
         tableLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+                // Clear the RecyclerView data when the user switches tabs
+                searchAdapter.setList(new ArrayList<Meal>());  // Set an empty list
+                searchAdapter.notifyDataSetChanged();  // Notify the adapter that the data has changed
+                // Clear the SearchView when a tab is selected
+                searchView.setQuery("", false);
+                searchView.clearFocus(); // Optionally clear the focus
                 // Update the "tap" variable to keep track of which tab is selected
                 tap = tab.getPosition();
 
@@ -120,9 +126,7 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                // Clear the RecyclerView data when the user switches tabs
-                searchAdapter.setList(new ArrayList<Meal>());  // Set an empty list
-                searchAdapter.notifyDataSetChanged();  // Notify the adapter that the data has changed
+
             }
 
             @Override

@@ -84,7 +84,6 @@ id datePicker
 id datePicker2
 id descLabel
 id descriptionTxtView
-id dotIndicator
 id favMealImg
 id favMealTitle
 id favRecView
@@ -118,6 +117,8 @@ id progressBarMealsByCountry
 id progressBarMealsByIngredient
 id progressBarRandom
 id randomMealImg
+id randomMealName
+id randomRecView
 id recPlaned
 id recView
 id recViewCategories
@@ -141,7 +142,6 @@ id textView6
 id topBar
 id txtViewAppName
 id videoLabel
-id viewPagerRandom
 layout activity_main
 layout activity_navbar
 layout dashboard_activty

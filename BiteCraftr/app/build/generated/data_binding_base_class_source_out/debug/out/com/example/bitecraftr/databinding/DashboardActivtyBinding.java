@@ -14,9 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import androidx.viewpager2.widget.ViewPager2;
 import com.example.bitecraftr.R;
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,9 +22,6 @@ import java.lang.String;
 public final class DashboardActivtyBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
-
-  @NonNull
-  public final DotsIndicator dotIndicator;
 
   @NonNull
   public final ProgressBar progressBarCategories;
@@ -48,6 +43,9 @@ public final class DashboardActivtyBinding implements ViewBinding {
 
   @NonNull
   public final ProgressBar progressBarRandom;
+
+  @NonNull
+  public final RecyclerView randomRecView;
 
   @NonNull
   public final RecyclerView recViewCategories;
@@ -82,22 +80,18 @@ public final class DashboardActivtyBinding implements ViewBinding {
   @NonNull
   public final LinearLayout topBar;
 
-  @NonNull
-  public final ViewPager2 viewPagerRandom;
-
   private DashboardActivtyBinding(@NonNull ConstraintLayout rootView,
-      @NonNull DotsIndicator dotIndicator, @NonNull ProgressBar progressBarCategories,
-      @NonNull ProgressBar progressBarCountry, @NonNull ProgressBar progressBarIngredients,
-      @NonNull ProgressBar progressBarMealCategory, @NonNull ProgressBar progressBarMealsByCountry,
+      @NonNull ProgressBar progressBarCategories, @NonNull ProgressBar progressBarCountry,
+      @NonNull ProgressBar progressBarIngredients, @NonNull ProgressBar progressBarMealCategory,
+      @NonNull ProgressBar progressBarMealsByCountry,
       @NonNull ProgressBar progressBarMealsByIngredient, @NonNull ProgressBar progressBarRandom,
-      @NonNull RecyclerView recViewCategories, @NonNull RecyclerView recViewCountry,
-      @NonNull RecyclerView recViewIngredients, @NonNull RecyclerView recViewMealCategory,
-      @NonNull RecyclerView recViewMealsByCountry, @NonNull RecyclerView recViewMealsByIngredient,
-      @NonNull ScrollView scrollView2, @NonNull TextView textView10, @NonNull TextView textView3,
-      @NonNull TextView textView6, @NonNull LinearLayout topBar,
-      @NonNull ViewPager2 viewPagerRandom) {
+      @NonNull RecyclerView randomRecView, @NonNull RecyclerView recViewCategories,
+      @NonNull RecyclerView recViewCountry, @NonNull RecyclerView recViewIngredients,
+      @NonNull RecyclerView recViewMealCategory, @NonNull RecyclerView recViewMealsByCountry,
+      @NonNull RecyclerView recViewMealsByIngredient, @NonNull ScrollView scrollView2,
+      @NonNull TextView textView10, @NonNull TextView textView3, @NonNull TextView textView6,
+      @NonNull LinearLayout topBar) {
     this.rootView = rootView;
-    this.dotIndicator = dotIndicator;
     this.progressBarCategories = progressBarCategories;
     this.progressBarCountry = progressBarCountry;
     this.progressBarIngredients = progressBarIngredients;
@@ -105,6 +99,7 @@ public final class DashboardActivtyBinding implements ViewBinding {
     this.progressBarMealsByCountry = progressBarMealsByCountry;
     this.progressBarMealsByIngredient = progressBarMealsByIngredient;
     this.progressBarRandom = progressBarRandom;
+    this.randomRecView = randomRecView;
     this.recViewCategories = recViewCategories;
     this.recViewCountry = recViewCountry;
     this.recViewIngredients = recViewIngredients;
@@ -116,7 +111,6 @@ public final class DashboardActivtyBinding implements ViewBinding {
     this.textView3 = textView3;
     this.textView6 = textView6;
     this.topBar = topBar;
-    this.viewPagerRandom = viewPagerRandom;
   }
 
   @Override
@@ -146,12 +140,6 @@ public final class DashboardActivtyBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.dotIndicator;
-      DotsIndicator dotIndicator = ViewBindings.findChildViewById(rootView, id);
-      if (dotIndicator == null) {
-        break missingId;
-      }
-
       id = R.id.progressBarCategories;
       ProgressBar progressBarCategories = ViewBindings.findChildViewById(rootView, id);
       if (progressBarCategories == null) {
@@ -191,6 +179,12 @@ public final class DashboardActivtyBinding implements ViewBinding {
       id = R.id.progressBarRandom;
       ProgressBar progressBarRandom = ViewBindings.findChildViewById(rootView, id);
       if (progressBarRandom == null) {
+        break missingId;
+      }
+
+      id = R.id.randomRecView;
+      RecyclerView randomRecView = ViewBindings.findChildViewById(rootView, id);
+      if (randomRecView == null) {
         break missingId;
       }
 
@@ -260,18 +254,12 @@ public final class DashboardActivtyBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.viewPagerRandom;
-      ViewPager2 viewPagerRandom = ViewBindings.findChildViewById(rootView, id);
-      if (viewPagerRandom == null) {
-        break missingId;
-      }
-
-      return new DashboardActivtyBinding((ConstraintLayout) rootView, dotIndicator,
-          progressBarCategories, progressBarCountry, progressBarIngredients,
-          progressBarMealCategory, progressBarMealsByCountry, progressBarMealsByIngredient,
-          progressBarRandom, recViewCategories, recViewCountry, recViewIngredients,
-          recViewMealCategory, recViewMealsByCountry, recViewMealsByIngredient, scrollView2,
-          textView10, textView3, textView6, topBar, viewPagerRandom);
+      return new DashboardActivtyBinding((ConstraintLayout) rootView, progressBarCategories,
+          progressBarCountry, progressBarIngredients, progressBarMealCategory,
+          progressBarMealsByCountry, progressBarMealsByIngredient, progressBarRandom, randomRecView,
+          recViewCategories, recViewCountry, recViewIngredients, recViewMealCategory,
+          recViewMealsByCountry, recViewMealsByIngredient, scrollView2, textView10, textView3,
+          textView6, topBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

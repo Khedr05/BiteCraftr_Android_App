@@ -4,33 +4,38 @@ package com.example.bitecraftr.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.bitecraftr.R;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class RandomMealContainerBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
-  public final ImageView randomMealImg;
+  public final ShapeableImageView randomMealImg;
 
-  private RandomMealContainerBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView randomMealImg) {
+  @NonNull
+  public final TextView randomMealName;
+
+  private RandomMealContainerBinding(@NonNull CardView rootView,
+      @NonNull ShapeableImageView randomMealImg, @NonNull TextView randomMealName) {
     this.rootView = rootView;
     this.randomMealImg = randomMealImg;
+    this.randomMealName = randomMealName;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -56,12 +61,18 @@ public final class RandomMealContainerBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.randomMealImg;
-      ImageView randomMealImg = ViewBindings.findChildViewById(rootView, id);
+      ShapeableImageView randomMealImg = ViewBindings.findChildViewById(rootView, id);
       if (randomMealImg == null) {
         break missingId;
       }
 
-      return new RandomMealContainerBinding((ConstraintLayout) rootView, randomMealImg);
+      id = R.id.randomMealName;
+      TextView randomMealName = ViewBindings.findChildViewById(rootView, id);
+      if (randomMealName == null) {
+        break missingId;
+      }
+
+      return new RandomMealContainerBinding((CardView) rootView, randomMealImg, randomMealName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
