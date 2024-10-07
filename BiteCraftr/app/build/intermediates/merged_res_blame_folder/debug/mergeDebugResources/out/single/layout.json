@@ -1,90 +1,86 @@
 [
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\explore_ingredients_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_ingredients_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/explore_country_flags_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/explore_country_flags_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\meals_by_ingredients_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meals_by_ingredients_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/explore_categories_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/explore_categories_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\meals_by_country_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meals_by_country_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/ingredients_details_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/ingredients_details_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\explore_categories_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_categories_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_calendar.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_calendar.xml"
     },
     {
         "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/random_meal_container.xml",
         "source": "com.example.bitecraftr.app-main-80:/layout/random_meal_container.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_search.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_search.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/dashboard_activty.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/dashboard_activty.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\dashboard_activty.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\dashboard_activty.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_favorites.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_favorites.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\ingredients_details_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\ingredients_details_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_search.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fav_meals_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fav_meals_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/schedule_meal_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/schedule_meal_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_explore.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_explore.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/activity_navbar.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/activity_navbar.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\activity_navbar.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\activity_navbar.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/explore_ingredients_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/explore_ingredients_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_network.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_network.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/meals_by_ingredients_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/meals_by_ingredients_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\explore_country_flags_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_country_flags_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/meal_of_search_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/meal_of_search_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\random_meal_container.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\random_meal_container.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fav_meals_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fav_meals_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_meal_details.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_meal_details.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/meals_by_country_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/meals_by_country_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_calendar.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_calendar.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_network.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_network.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\meal_of_search_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meal_of_search_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/activity_main.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\schedule_meal_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\schedule_meal_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_meal_details.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_meal_details.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_favorites.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_favorites.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/meals_by_category_row.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/meals_by_category_row.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\meals_by_category_row.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meals_by_category_row.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_explore.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_explore.xml"
     },
     {
-        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-mergeDebugResources-77:\\layout\\fragment_schedule.xml",
-        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_schedule.xml"
+        "merged": "com.example.bitecraftr.app-mergeDebugResources-77:/layout/fragment_schedule.xml",
+        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_schedule.xml"
     }
 ]

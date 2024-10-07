@@ -1,7 +1,10 @@
 package com.example.bitecraftr.MealDetails.View;
 
+import android.content.Intent;
+import android.net.ParseException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,8 +37,12 @@ import com.example.bitecraftr.Model.ScheduledMeal;
 import com.example.bitecraftr.Network.RemoteDataSourceImpl;
 import com.example.bitecraftr.R;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 /**
  * Fragment that displays the details of a selected meal,
@@ -119,6 +126,7 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
                         Toast.makeText(getContext(), "Selected date: " + selectedDate, Toast.LENGTH_SHORT).show();
                         scheduledMeal = new ScheduledMeal(meal, selectedDate);
                         presenter.addToPlan(scheduledMeal);
+                        saveMealToCalendar(meal.getStrMeal(),stringToDate(selectedDate),meal.getStrInstructions());
                     }
                 });
                 dialogFragment.show(getParentFragmentManager(), "calendarDialog");
@@ -229,4 +237,53 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
         }
         return videoId != null ? videoId : ""; // Return video ID or empty string
     }
+
+    private Date stringToDate(String dateString) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy"); // Define the expected date format
+        Date date = null;
+        try {
+            date = dateFormat.parse(dateString); // Attempt to parse the string into a Date object
+        } catch (ParseException e) {
+            e.printStackTrace(); // Print stack trace for debugging
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
+        }
+        return date; // Return the Date object (or null if parsing failed)
+    }
+
+
+    private void saveMealToCalendar(String mealTitle, Date selectedDate, String description) {
+        // Use Calendar to manipulate the start and end times
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(selectedDate);
+
+        // Set start time to the beginning of the selected day (midnight)
+        calendar.set(Calendar.HOUR_OF_DAY, 0);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        long startTime = calendar.getTimeInMillis();
+
+        // Set end time to the end of the selected day (one millisecond before midnight)
+        calendar.set(Calendar.HOUR_OF_DAY, 23);
+        calendar.set(Calendar.MINUTE, 59);
+        calendar.set(Calendar.SECOND, 59);
+        long endTime = calendar.getTimeInMillis();
+
+        // Create the intent to insert the event
+        Intent intent = new Intent(Intent.ACTION_INSERT)
+                .setData(CalendarContract.Events.CONTENT_URI)
+                .putExtra(CalendarContract.Events.TITLE, mealTitle)
+                .putExtra(CalendarContract.Events.DESCRIPTION, description)
+                .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, startTime)
+                .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime) // Event ends on the same day
+                .putExtra(CalendarContract.Events.EVENT_TIMEZONE, TimeZone.getDefault().getID());
+
+        // Check if any app can handle the intent and launch it
+        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(getContext(), "No calendar app available", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }
