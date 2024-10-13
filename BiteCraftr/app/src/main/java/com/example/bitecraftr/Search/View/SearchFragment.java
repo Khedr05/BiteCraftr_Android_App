@@ -26,6 +26,7 @@ import com.example.bitecraftr.Search.Presenter.SearchPresenter;
 import com.example.bitecraftr.R;
 
 import com.example.bitecraftr.Search.Presenter.SearchPresenterImpl;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -199,7 +200,7 @@ public class SearchFragment extends Fragment implements OnSearchClickListner, co
     public void showData(List<Meal> meals) {
 
         if(meals == null){
-            Toast.makeText(getContext(), "No Meals Found", Toast.LENGTH_SHORT).show();
+            Snackbar.make(getView(), "No Meals Found", Snackbar.LENGTH_SHORT).show();
         }
         // Check if a specific meal was clicked (byId flag is true)
         else if (searchAdapter.getById()) {

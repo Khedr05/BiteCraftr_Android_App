@@ -1,478 +1,482 @@
 [
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_mexican.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/mexican.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_dutch.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\dutch.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxxhdpi_explore_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxxhdpi/explore_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-hdpi_calendar_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-hdpi\\calendar_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/raw_network.json.flat",
-        "source": "com.example.bitecraftr.app-main-80:/raw/network.json"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_portuguese.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/portuguese.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_explore_ingredients_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_ingredients_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_favorites.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_favorites.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_filipino.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\filipino.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_spanish.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/spanish.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_activity_navbar.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\activity_navbar.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-mdpi_favorites_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-mdpi/favorites_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-mdpi_explore_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-mdpi/explore_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxhdpi_favorites_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxhdpi\\favorites_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_greek.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\greek.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_moroccan.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/moroccan.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_russian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/russian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxhdpi_back.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxhdpi/back.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxxhdpi_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxxhdpi\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-ldpi_favorites_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-ldpi\\favorites_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_kenyan.jpg.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\kenyan.jpg"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_brown_bg_bottom_corner.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/brown_bg_bottom_corner.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_greek.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/greek.png"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_explore_categories_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/explore_categories_row.xml"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_jamaican.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/jamaican.png"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xhdpi_back.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xhdpi/back.png"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_add_button.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/add_button.png"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_croatian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/croatian.png"
-    },
-    {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xhdpi_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xhdpi/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_russian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\russian.png"
     },
     {
         "merged": "com.example.bitecraftr.app-debug-78:/layout_activity_main.xml.flat",
         "source": "com.example.bitecraftr.app-main-80:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_meals_by_ingredients_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/meals_by_ingredients_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-ldpi_explore_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-ldpi\\explore_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-hdpi_favorites_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-hdpi/favorites_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxhdpi_fav_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxhdpi\\fav_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/xml_backup_rules.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_meals_by_ingredients_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meals_by_ingredients_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-hdpi_calendar_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-hdpi/calendar_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_label_background.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\label_background.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_jamaican.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\jamaican.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_polish.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/polish.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxxhdpi_fav_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxxhdpi\\fav_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_calendar.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_calendar.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-hdpi_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-hdpi\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxxhdpi_calendar_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxxhdpi/calendar_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_vietnamese.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\vietnamese.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_chinese.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/chinese.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_ukrainian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\ukrainian.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_activity_navbar.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/activity_navbar.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-mdpi_calendar_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-mdpi\\calendar_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-mdpi_fav_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-mdpi/fav_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_american.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\american.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-ldpi_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-ldpi/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxhdpi_back.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxhdpi\\back.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_schedule_meal_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/schedule_meal_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_french.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/french.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\raw_animation.json.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\raw\\animation.json"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_meal_details.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_meal_details.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_turkish.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\turkish.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_moroccan.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\moroccan.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_explore_country_flags_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_country_flags_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_label_background.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/label_background.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_fav_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xhdpi\\fav_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxxhdpi_fav_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxxhdpi/fav_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_brown_bg_bottom_corner.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\brown_bg_bottom_corner.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_tunisian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/tunisian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-mdpi_back.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-mdpi\\back.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxhdpi_explore_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxhdpi/explore_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxhdpi_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxhdpi\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_explore_country_flags_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/explore_country_flags_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_meals_by_category_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meals_by_category_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_egyptian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\egyptian.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_dutch.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/dutch.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_explore_categories_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\explore_categories_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_search.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_search.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-mdpi_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-mdpi\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-hdpi_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-hdpi/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_favorites_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xhdpi\\favorites_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_explore.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_explore.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxhdpi_fav_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxhdpi/fav_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxhdpi_calendar_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxhdpi\\calendar_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-ldpi_favorites_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-ldpi/favorites_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_add_button.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\add_button.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-ldpi_explore_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-ldpi/explore_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxxhdpi_favorites_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxxhdpi\\favorites_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_date_picker_background.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/date_picker_background.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_back.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xhdpi\\back.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_british.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/british.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-ldpi_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-ldpi\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_top_title_rounded.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/top_title_rounded.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_japanese.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\japanese.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/anim_animation_layout.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/anim/animation_layout.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_british.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\british.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-ldpi_calendar_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-ldpi\\calendar_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_schedule_meal_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\schedule_meal_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_dashboard_activty.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\dashboard_activty.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_malaysian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/malaysian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxxhdpi_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxxhdpi/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xhdpi_explore_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xhdpi/explore_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_date_picker_background.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\date_picker_background.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_irish.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/irish.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-hdpi_back.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-hdpi\\back.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_network.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_network.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_meals_by_category_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/meals_by_category_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-mdpi_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-mdpi/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_filipino.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/filipino.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-mdpi_explore_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-mdpi\\explore_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_calendar_details.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/calendar_details.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_indian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/indian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_search_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xhdpi\\search_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_dashboard_activty.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/dashboard_activty.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_schedule.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_schedule.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxxhdpi_back.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxxhdpi\\back.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xhdpi_favorites_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xhdpi/favorites_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxxhdpi_explore_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxxhdpi\\explore_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxhdpi_calendar_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxhdpi/calendar_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-mdpi_fav_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-mdpi\\fav_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-ldpi_back.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-ldpi/back.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-mdpi_calendar_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-mdpi/calendar_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_thai.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\thai.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_portuguese.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\portuguese.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_turkish.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/turkish.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_malaysian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\malaysian.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_irish.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\irish.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-hdpi_fav_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-hdpi/fav_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\anim_animation_layout.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\anim\\animation_layout.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_explore_ingredients_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/explore_ingredients_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_french.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\french.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxxhdpi_back.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxxhdpi/back.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_canadian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\canadian.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fav_meals_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fav_meals_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_chinese.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\chinese.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_kenyan.jpg.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/kenyan.jpg"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_polish.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\polish.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_meals_by_country_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/meals_by_country_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_explore.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_explore.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxhdpi_favorites_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxhdpi/favorites_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-ldpi_back.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-ldpi\\back.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-hdpi_explore_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-hdpi/explore_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_grey_bg_circle.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\grey_bg_circle.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_italian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/italian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_meals_by_country_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meals_by_country_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xhdpi_calendar_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xhdpi/calendar_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/raw_animation.json.flat",
-        "source": "com.example.bitecraftr.app-main-80:/raw/animation.json"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_croatian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\croatian.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_random_meal_container.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/random_meal_container.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_meal_of_search_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\meal_of_search_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_ingredients_details_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/ingredients_details_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\raw_network.json.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\raw\\network.json"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_vietnamese.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/vietnamese.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_thai.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/thai.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-ldpi_fav_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-ldpi/fav_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_indian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\indian.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_egyptian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/egyptian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_ingredients_details_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\ingredients_details_row.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_schedule.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_schedule.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_ukrainian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/ukrainian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxhdpi_explore_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxhdpi\\explore_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_fragment_network.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/fragment_network.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_removed.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\removed.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_canadian.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/canadian.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-hdpi_fav_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-hdpi\\fav_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-mdpi_back.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-mdpi/back.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_spanish.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\spanish.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/layout_meal_of_search_row.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/layout/meal_of_search_row.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xxxhdpi_calendar_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xxxhdpi\\calendar_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_grey_bg_circle.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/grey_bg_circle.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-ldpi_fav_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-ldpi\\fav_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_meal_details.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_meal_details.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxhdpi_search_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxhdpi/search_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-hdpi_favorites_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-hdpi\\favorites_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xxxhdpi_favorites_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xxxhdpi/favorites_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_calendar.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_calendar.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_american.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/american.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_mexican.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\mexican.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_removed.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/removed.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_random_meal_container.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\random_meal_container.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-hdpi_back.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-hdpi/back.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_explore_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xhdpi\\explore_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable_japanese.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable/japanese.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-xhdpi_calendar_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-xhdpi\\calendar_icon.png"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-ldpi_calendar_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-ldpi/calendar_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_top_title_rounded.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\top_title_rounded.xml"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/drawable-xhdpi_fav_icon.png.flat",
-        "source": "com.example.bitecraftr.app-main-80:/drawable-xhdpi/fav_icon.png"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.bitecraftr.app-debug-78:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.example.bitecraftr.app-main-80:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_italian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\italian.png"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fav_meals_row.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fav_meals_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_tunisian.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\tunisian.png"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-hdpi_explore_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-hdpi\\explore_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable-mdpi_favorites_icon.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable-mdpi\\favorites_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-debug-78:\\drawable_calendar_details.png.flat",
+        "source": "C:\\Users\\Sherif\\.gradle\\daemon\\8.7\\com.example.bitecraftr.app-main-80:\\drawable\\calendar_details.png"
     }
 ]

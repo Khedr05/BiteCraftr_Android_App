@@ -135,6 +135,7 @@ id searchView
 id searchedMealImg
 id searchedMealTitle
 id tabLayout
+id textView
 id textView10
 id textView2
 id textView3

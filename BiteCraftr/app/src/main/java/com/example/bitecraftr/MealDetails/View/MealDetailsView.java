@@ -14,5 +14,5 @@ public interface MealDetailsView {
     void displayIngredients(List<Ingredients> ingredients);
 
     // Method to show a toast message to the user
-    void showToast(String message);
+    void showSnakebar(String message);
 }

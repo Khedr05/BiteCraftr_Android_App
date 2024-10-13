@@ -4,6 +4,7 @@ package com.example.bitecraftr.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -25,11 +26,16 @@ public final class FragmentNetworkBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout main;
 
+  @NonNull
+  public final TextView textView;
+
   private FragmentNetworkBinding(@NonNull ConstraintLayout rootView,
-      @NonNull LottieAnimationView lottieAnimationViewNetwork, @NonNull ConstraintLayout main) {
+      @NonNull LottieAnimationView lottieAnimationViewNetwork, @NonNull ConstraintLayout main,
+      @NonNull TextView textView) {
     this.rootView = rootView;
     this.lottieAnimationViewNetwork = lottieAnimationViewNetwork;
     this.main = main;
+    this.textView = textView;
   }
 
   @Override
@@ -67,8 +73,14 @@ public final class FragmentNetworkBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
       return new FragmentNetworkBinding((ConstraintLayout) rootView, lottieAnimationViewNetwork,
-          main);
+          main, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

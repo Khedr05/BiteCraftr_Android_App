@@ -56,7 +56,7 @@ public class MealDetailsPresenterImpl implements MealDetailsPresenter {
                 }
             } catch (Exception e) {
                 // Show a toast message if there's an error fetching ingredients
-                _view.showToast("Error fetching ingredients: " + e.getMessage());
+                _view.showSnakebar("Error fetching ingredients: " + e.getMessage());
             }
         }
         // Display the list of ingredients in the view
@@ -66,12 +66,12 @@ public class MealDetailsPresenterImpl implements MealDetailsPresenter {
     @Override
     public void addToFavorite(Meal meal) {
         _repo.insertFavouriteMeal(meal); // Insert the meal into favorites in the repository
-        _view.showToast("Added to favorites"); // Notify the user
+        _view.showSnakebar("Added to favorites"); // Notify the user
     }
 
     @Override
     public void addToPlan(ScheduledMeal scheduledMeal) {
         _repo.insertScheduledMeal(scheduledMeal); // Insert the scheduled meal into the repository
-        _view.showToast("Added to plan"); // Notify the user
+        _view.showSnakebar("Added to plan"); // Notify the user
     }
 }

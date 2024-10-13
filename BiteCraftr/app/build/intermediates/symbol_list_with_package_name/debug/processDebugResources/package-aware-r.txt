@@ -3930,6 +3930,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView10
 id textView2
 id textView3

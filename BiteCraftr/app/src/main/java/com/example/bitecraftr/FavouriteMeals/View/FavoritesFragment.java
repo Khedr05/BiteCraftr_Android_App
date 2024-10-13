@@ -22,6 +22,7 @@ import com.example.bitecraftr.Model.AppRepositoryImpl;
 import com.example.bitecraftr.Model.Meal;
 import com.example.bitecraftr.Network.RemoteDataSourceImpl;
 import com.example.bitecraftr.R;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
@@ -89,7 +90,7 @@ public class FavoritesFragment extends Fragment implements FavMealsView, OnFavMe
     public void onFavRemoveMealClick(Meal meal) {
         // Remove the meal using the presenter and show a toast message
         mealPresenter.removeFavMeal(meal);
-        Toast.makeText(getContext(), "Meal Removed", Toast.LENGTH_SHORT).show();
+        Snackbar.make(getView(), "Meal Removed", Snackbar.LENGTH_SHORT).show();
     }
 
     // Method to update the view with the list of favorite meals

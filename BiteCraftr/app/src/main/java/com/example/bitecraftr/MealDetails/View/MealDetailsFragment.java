@@ -36,6 +36,7 @@ import com.example.bitecraftr.Model.Meal;
 import com.example.bitecraftr.Model.ScheduledMeal;
 import com.example.bitecraftr.Network.RemoteDataSourceImpl;
 import com.example.bitecraftr.R;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -123,7 +124,7 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
                 dialogFragment.setOnDateSelectedListener(new OnDateSelectedListener() {
                     @Override
                     public void onDateSelected(String selectedDate) {
-                        Toast.makeText(getContext(), "Selected date: " + selectedDate, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getContext(), "Selected date: " + selectedDate, Toast.LENGTH_SHORT).show();
                         scheduledMeal = new ScheduledMeal(meal, selectedDate);
                         presenter.addToPlan(scheduledMeal);
                         saveMealToCalendar(meal.getStrMeal(),stringToDate(selectedDate),meal.getStrInstructions());
@@ -184,9 +185,9 @@ public class MealDetailsFragment extends Fragment implements MealDetailsView {
     }
 
     @Override
-    public void showToast(String message) {
-        // Show a toast message
-        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+    public void showSnakebar(String message) {
+        // Show a Snakebar message
+        Snackbar.make(getView(), message, Snackbar.LENGTH_SHORT).show();
     }
 
     /**

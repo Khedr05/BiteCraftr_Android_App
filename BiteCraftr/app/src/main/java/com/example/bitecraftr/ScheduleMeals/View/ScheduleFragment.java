@@ -23,6 +23,7 @@ import com.example.bitecraftr.Network.RemoteDataSourceImpl;
 import com.example.bitecraftr.R;
 import com.example.bitecraftr.ScheduleMeals.Presenter.SchedulePresenter;
 import com.example.bitecraftr.ScheduleMeals.Presenter.SchedulePresenterImpl;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -117,5 +118,6 @@ public class ScheduleFragment extends Fragment implements OnScheduleMealsAdapter
     public void onRemoveMealClick(ScheduledMeal meal) {
         // Call the presenter to delete the scheduled meal
         schedulePresenter.deleteScheduledMeal(meal);
+        Snackbar.make(getView(), "Meal Removed", Snackbar.LENGTH_SHORT).show();
     }
 }
